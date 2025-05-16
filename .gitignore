@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment
+env/
+venv/
+ENV/
+.venv/
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+
+# Pytest
+.pytest_cache/
+.cache/
+
+# mypy
+.mypy_cache/
+
+# Coverage
+.coverage
+htmlcov/
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local SQLite database
+*.sqlite3
+
+# Docker
+*.tar
+*.pid
+*.pid.lock
+
+# __init__ backup files
+*~ 

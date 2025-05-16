@@ -8,11 +8,11 @@ from app.main import app  # make sure app is defined in app/main.py
 
 client = TestClient(app)
 
-def test_sentiment_response():
+def test_persona_response():
     sample_text = "I love this product!"
-    response = client.post("/analyze", json={"text": sample_text})
+    response = client.post("/api/analyze", json={"text": sample_text})
 
     assert response.status_code == 200
 
-    sentiment = response.json().get("sentiment")
-    assert sentiment in ["positive", "negative", "neutral"], f"Unexpected sentiment: {sentiment}"
+    persona = response.json().get("persona")
+    assert persona in ["optimistic","pessimistic", "friendly", 'formal', 'sarcastic', 'neutral'], f"Unexpected Persona: {persona}"

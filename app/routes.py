@@ -1,16 +1,16 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
-from app.gemini_client import get_sentiment
+from app.gemini_client import get_persona
 
 router = APIRouter()
 
 class TextInput(BaseModel):
     text: str
 
-class SentimentResponse(BaseModel):
-    sentiment: str
+class PersonaResponse(BaseModel):
+    persona: str
 
-@router.post("/analyze", response_model=SentimentResponse)
+@router.post("/analyze", response_model=PersonaResponse)
 def analyze(input: TextInput):
-    sentiment = get_sentiment(input.text)
-    return SentimentResponse(sentiment=sentiment)
+    persona = get_persona(input.text)
+    return PersonaResponse(persona=persona)
