@@ -2,16 +2,6 @@
 
 A Python-based persona classification project leveraging modern machine learning techniques. The project is designed for flexibility, ease of use, and reproducibility, with Docker support included.
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Docker Usage](#docker-usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
@@ -19,7 +9,7 @@ A Python-based persona classification project leveraging modern machine learning
 
 ## Features
 
-- Persona classification using advanced ML algorithms
+- Persona classification using gemini 
 - Modular, extensible Python codebase
 - Docker containerization for consistent environments
 - Easy setup and usage
