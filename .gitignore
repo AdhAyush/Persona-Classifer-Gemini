@@ -41,6 +41,7 @@ Thumbs.db
 # Local SQLite database
 *.sqlite3
 
+
 # Docker
 *.tar
 *.pid
